@@ -1,0 +1,15 @@
+current:
+  company: Meta
+  role: Play Experience Foundation (Gaming)
+  link: https://developers.facebook.com/docs/games/
+  icon: facebook
+previous:
+  - company: Facebook
+    role: Intern (Facebook Ads Backend)
+    link: https://www.metacareers.com/careerprograms/students
+  - company: JPMorgan Chase
+    role: Technology Analyst
+    link: https://www.jpmorgan.com/technology
+  - company: HackRice
+    role: Organizer
+    link: https://hack.rice.edu/

@@ -1,0 +1,40 @@
+body {
+    color: #f0f2f4;
+    background: #2d2a2e;
+}
+
+a {
+    color: #f0f2f4;
+}
+
+a:hover, a:focus {
+    color: #777;
+}
+
+dt, dd {
+    margin-bottom: 0.5rem;
+}
+
+#main {
+    margin-top: 10rem;
+}
+
+#current {
+    margin-bottom: 1rem;
+}
+
+#previously {
+    opacity: .6;
+}
+
+.social {
+    margin-right: 1rem;
+}
+
+::-moz-selection {
+    background: #999;
+}
+
+::selection {
+    background: #999;
+}

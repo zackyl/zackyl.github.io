@@ -1,10 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-hi
-</body>
-</html>
+---
+layout: default
+title: Zachary Lee
+---
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>
+          <a href="https://www.cs.rice.edu/" target="_blank">
+            BS CS '19, Rice University
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <dl>
+          <h3 id="current">
+            <dt>
+              {% assign current = site.data.jobs.current %}
+              <a href="{{ current.link }}" target="_blank">
+                <i data-feather="{{ current.icon }}"></i>
+                {{ current.role }} @ {{ current.company }}
+              </a>
+            </dt>
+          </h3>
+          <h5 id="previously">
+            <dd>
+              Previously:
+            </dd>
+            {% for job in site.data.jobs.previous %}
+            <dd>
+              <a href="{{ job.link }}" target="_blank">
+                {{ job.role }} @ {{ job.company }}
+              </a>
+            </dd>
+            {% endfor %}
+          </h5>
+        </dl>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>
+          <a href="/assets/2022%20Resume.pdf" target="_blank" class="social" title="CV">
+            <i data-feather="briefcase"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/zachary-lee1/" target="_blank" class="social" title="LinkedIn">
+            <i data-feather="linkedin"></i>
+          </a>
+          <a href="https://github.com/zackyl" target="_blank" class="social" title="Github">
+            <i data-feather="github"></i>
+          </a>
+          <a href="mailto: zackleedev@gmail.com" target="_blank" class="social" title="Email">
+            <i data-feather="mail"></i>
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  feather.replace({
+    'stroke-width': 1.5,
+  });
+</script>
